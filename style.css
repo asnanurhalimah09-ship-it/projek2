@@ -2,8 +2,7 @@ body{
     background: linear-gradient(135deg, #f8f3ee, #efe3d6, #e7d4c3);
     color: #6D5B4B;
     text-align:center;
-    font-family: "Poppins", serif;
-}
+   font-family: "Courier New", serif;
 
 header{
     display:flex;
@@ -33,6 +32,7 @@ h1{
 .menu a{
     text-decoration:none;
     color:#422913;
+    font-family: "poppins", serif;
     font-size:16px;
 }
 
@@ -74,7 +74,8 @@ h1{
 .profil-foto{
     display:flex;
     justify-content:center;
-    order:-1;
+    margin-top:20px;
+    margin-bottom:20px;
 }
 
 #foto-profil{
@@ -101,7 +102,7 @@ h1{
 .profil-text p{
     font-size:16px;
     line-height:1.6;
-    font-family:'Poppins', sans-serif;
+    font-family:'courier new', sans-serif;
 }
 
 .profil-text h3{
