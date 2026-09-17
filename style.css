@@ -136,74 +136,40 @@ footer{
 }
 
 
-@media (max-width: 768px) {
+@media(max-width:768px){
     header{
         flex-direction:column;
-        margin:15px;
-        padding:20px;
-        border-radius:30px;
+        gap:20px;
+
+    }
+
+    header h1{
+        font-size:40px;
         text-align:center;
-    }
 
-    h1{
-        font-size:32px;
-    }
-
-    .menu{
-        flex-wrap:wrap;
-        justify-content:center;
-        gap:8px;
-    }
-
-    .menu a{
-        font-size:14px;
-        padding:5px 12px;
     }
 
     .profil{
-        flex-direction:column;
-        gap:20px;
-        padding:25px;
-    }
+        flex-direction:column-reverse;
+        text-align:center;
+        padding:40px 25px;
 
-    .profil-text{
-        flex:none;
-        width:100%;
-    }
-
-    .welcome{
-        font-size:18px;
-        margin-bottom:30px;
-    }
-
-    .profil-text h2{
-        font-size:26px;
-    }
-
-    .profil-text p{
-        font-size:16px;
-    }
-
-    .profil-text h3{
-        font-size:22px;
-        margin-top:30px;
-    }
-
-    .skill li{
-        font-size:16px;
-        padding:8px 15px;
-        margin-bottom:0;
-    }
-
-    .profil-foto{
-        flex:none;
-        width:100%;
-        margin-top:20px;
     }
 
     #foto-profil{
-        margin-top:20px;
-        width:220px;
-        height:220px;
+        width:280px;
+        height:280px;
+
     }
+
+    .skill{
+        justify-content:center;
+
+    }
+
+    .profil-text p{
+        font-size:18px;
+
+    }
+
 }
