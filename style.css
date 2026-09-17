@@ -2,7 +2,7 @@ body{
     background: linear-gradient(135deg, #f8f3ee, #efe3d6, #e7d4c3);
      color: #6D5B4B;
     text-align:left;
-    font-family: "Flayfair Display", serif;
+    font-family: "Poppins", serif;
 }
 
 header{
@@ -22,6 +22,7 @@ h1{
 }
 
 .menu{
+    flex-wrap:wrap;
     display:flex;
     gap:10px;
 }
@@ -76,7 +77,7 @@ h1{
 .profil-text p{
     font-size:35px;
     line-height:1.5;
-    font-family:'poppins', sans-serif;
+    font-family:'Poppins', sans-serif;
 }
 
 .profil-text h3{
@@ -117,7 +118,7 @@ h1{
 .skill li{
     background:#d1b694bb;
     padding:15px 25px;
-    border-radius:15px;
+    border-radius:20px;
     margin-bottom:60px;
     font-size:35px;
 }
@@ -135,3 +136,74 @@ footer{
 }
 
 
+@media (max-width: 768px) {
+    header{
+        flex-direction:column;
+        margin:15px;
+        padding:20px;
+        border-radius:30px;
+        text-align:center;
+    }
+
+    h1{
+        font-size:32px;
+    }
+
+    .menu{
+        flex-wrap:wrap;
+        justify-content:center;
+        gap:8px;
+    }
+
+    .menu a{
+        font-size:14px;
+        padding:5px 12px;
+    }
+
+    .profil{
+        flex-direction:column;
+        gap:20px;
+        padding:25px;
+    }
+
+    .profil-text{
+        flex:none;
+        width:100%;
+    }
+
+    .welcome{
+        font-size:18px;
+        margin-bottom:30px;
+    }
+
+    .profil-text h2{
+        font-size:26px;
+    }
+
+    .profil-text p{
+        font-size:16px;
+    }
+
+    .profil-text h3{
+        font-size:22px;
+        margin-top:30px;
+    }
+
+    .skill li{
+        font-size:16px;
+        padding:8px 15px;
+        margin-bottom:0;
+    }
+
+    .profil-foto{
+        flex:none;
+        width:100%;
+        margin-top:20px;
+    }
+
+    #foto-profil{
+        margin-top:20px;
+        width:220px;
+        height:220px;
+    }
+}
