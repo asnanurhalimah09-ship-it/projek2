@@ -173,64 +173,7 @@ h1{
     to{ opacity:1; }
 }
 
-/* Experience: kartu */
-.card{
-    background:#fffaf5;
-    border:2px solid #d1b694;
-    border-radius:20px;
-    padding:20px;
-    margin:25px auto;
-    max-width:480px;
-    box-shadow:0 10px 25px rgba(0,0,0,0.12);
-    transition:0.4s;
-    text-align:center;
-    animation: fadeBody 1s ease;
-}
-
-.card:hover{
-    transform:translateY(-5px);
-}
-
-.card-foto{
-    width:220px;
-    height:220px;
-    object-fit:cover;
-    border-radius:50%;
-    border:6px solid #d1b694;
-    box-shadow:0 10px 25px rgba(0,0,0,0.12);
-    transition:0.4s;
-    margin:0 auto 15px auto;
-    display:block;
-    animation: fotoMuncul 2s ease;
-}
-
-.card-foto:hover{
-    transform:scale(1.05);
-}
-
-.card h3{
-    margin-top: 30px;
-    color:#57402a;
-    background:#d1b694bb;
-    padding:10px 20px;
-    border-radius:20px;
-    font-size:16px;
-}
-
-.card p{
-    font-family: "poppins", serif;
-    font-size:16px;
-    line-height:1.6;
-    text-align:center;
-}
-
-.card h4{
-    margin-top:40px;
-    color:#57402a;
-    font-size:15px;
-}
-
-/* Teks dan link di container, kartu, project */
+/* Teks dan link di container dan project */
 .container p{
     font-family: "poppins", serif;
     font-size:16px;
@@ -239,7 +182,6 @@ h1{
 }
 
 .container a,
-.card a,
 .project-card a{
     color:#8b6b4a;
     font-weight:bold;
@@ -247,7 +189,6 @@ h1{
 }
 
 .container a:hover,
-.card a:hover,
 .project-card a:hover{
     color:#57402a;
 }
@@ -343,7 +284,7 @@ h1{
     font-weight:bold;
 }
 
-/* Project */
+/* Experience dan Project */
 .project-card{
     margin:25px auto;
     max-width:480px;
