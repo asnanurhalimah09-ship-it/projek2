@@ -1,3 +1,4 @@
+/* Body */
 body{
     background: linear-gradient(135deg, #f8f3ee, #efe3d6, #e7d4c3);
     color: #6D5B4B;
@@ -5,6 +6,7 @@ body{
     font-family: "Courier New", serif;
 }
 
+/* Header */
 header{
     display:flex;
     flex-direction:column;
@@ -23,6 +25,7 @@ h1{
     font-size:40px;
 }
 
+/* Menu navigasi */
 .menu{
     display:flex;
     flex-wrap:wrap;
@@ -37,12 +40,6 @@ h1{
     font-size:16px;
 }
 
-.menu a:hover{
-    color:#fffefd;
-    background:#6b6a6a;
-    transform:translateY(-3px) scale(1.05);
-}
-
 .menu a{
     background:#4e3116;
     color:#faf4ee;
@@ -51,6 +48,13 @@ h1{
     text-decoration:none;
 }
 
+.menu a:hover{
+    color:#fffefd;
+    background:#6b6a6a;
+    transform:translateY(-3px) scale(1.05);
+}
+
+/* Home: layout profil */
 .profil{
     display:flex;
     flex-direction:column;
@@ -67,32 +71,17 @@ h1{
 }
 
 .welcome{
-    font-size:20px;
+    font-size:18px;
     color:#422913;
     font-style:italic;
     margin-bottom:20px;
 }
 
+/* Home: foto profil */
 .profil-foto{
     flex:1;
     text-align:center;
     animation: fotoMuncul 2s ease;
-}
-
-@keyframes fotoMuncul{
-    from{
-        opacity:0;
-        transform:translateY(20px) scale(0.95);
-    }
-    to{
-        opacity:1;
-        transform:translateY(0) scale(1);
-    }
-}
-
-@keyframes fadeBody{
-    from{ opacity:0; }
-    to{ opacity:1; }
 }
 
 #foto-profil{
@@ -109,6 +98,7 @@ h1{
     transform:scale(1.05);
 }
 
+/* Home: teks profil */
 .profil-text h2{
     font-size:32px;
     line-height:1.4;
@@ -118,9 +108,9 @@ h1{
 }
 
 .profil-text p{
+    font-family: "poppins", serif;
     font-size:16px;
     line-height:1.6;
-    font-family:'poppins', sans-serif;
 }
 
 .profil-text h3{
@@ -129,6 +119,25 @@ h1{
     font-size:22px;
 }
 
+.profil-text h4{
+    margin-top:40px;
+    color:#57402a;
+    font-size:15px;
+}
+
+.profil-text h4{
+    margin-top:40px;
+    color:#57402a;
+    font-size:15px;
+}
+
+.profil-text a{
+    color:#8b6b4a;
+    font-weight:bold;
+    font-size:15px;
+}
+
+/* Home: daftar skill */
 .skill{
     display:flex;
     flex-wrap:wrap;
@@ -147,14 +156,324 @@ h1{
     font-size:16px;
 }
 
-.profil-text a{
-    color:#8b6b4a;
-    font-weight:bold;
+/* Animasi */
+@keyframes fotoMuncul{
+    from{
+        opacity:0;
+        transform:translateY(20px) scale(0.95);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0) scale(1);
+    }
+}
+
+@keyframes fadeBody{
+    from{ opacity:0; }
+    to{ opacity:1; }
+}
+
+/* Experience: kartu */
+.card{
+    background:#fffaf5;
+    border:2px solid #d1b694;
+    border-radius:20px;
+    padding:20px;
+    margin:25px auto;
+    max-width:480px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.12);
+    transition:0.4s;
+    text-align:center;
+    animation: fadeBody 1s ease;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+}
+
+.card-foto{
+    width:220px;
+    height:220px;
+    object-fit:cover;
+    border-radius:50%;
+    border:6px solid #d1b694;
+    box-shadow:0 10px 25px rgba(0,0,0,0.12);
+    transition:0.4s;
+    margin:0 auto 15px auto;
+    display:block;
+    animation: fotoMuncul 2s ease;
+}
+
+.card-foto:hover{
+    transform:scale(1.05);
+}
+
+.card h3{
+    margin-top: 30px;
+    color:#57402a;
+    background:#d1b694bb;
+    padding:10px 20px;
+    border-radius:20px;
     font-size:16px;
 }
 
-footer{
+.card p{
+    font-family: "poppins", serif;
+    font-size:16px;
+    line-height:1.6;
     text-align:center;
-    margin-top:50px;
+}
+
+.card h4{
+    margin-top:40px;
+    color:#57402a;
+    font-size:15px;
+}
+
+/* Teks dan link di container, kartu, project */
+.container p{
+    font-family: "poppins", serif;
+    font-size:16px;
+    line-height:1.6;
+    text-align:center;
+}
+
+.container a,
+.card a,
+.project-card a{
+    color:#8b6b4a;
+    font-weight:bold;
+    text-decoration:none;
+}
+
+.container a:hover,
+.card a:hover,
+.project-card a:hover{
+    color:#57402a;
+}
+
+/* Container halaman lain */
+.page-container{
+    display:flex;
+    flex-direction:column;
+    max-width:700px;
+    margin:0 auto;
+    padding:50px 20px;
+    animation: fadeBody 1s ease;
+}
+
+.page-container h2{
+    font-size:32px;
+    line-height:1.4;
+    margin-top:20px;
+    margin-bottom:10px;
+    color:#57402a;
+}
+
+.page-container h3{
+    margin-top:30px;
+    color:#57402a;
+    font-size:22px;
+}
+
+.page-container > p{
+    font-family:'poppins', serif;
+    font-size:16px;
+    line-height:1.6;
+}
+
+.page-container h4{
+    margin-top:40px;
+    color:#57402a;
+    font-size:15px;
+}
+
+.page-container a{
+    color:#8b6b4a;
+    font-weight:bold;
+    font-size:15px;
+    text-decoration:none;
+}
+
+.page-container a:hover{
+    color:#57402a;
+}
+
+/* List pill: hobi, pendidikan, teknologi */
+.pill-list{
+    display:flex;
+    flex-wrap:wrap;
+    font-family:'poppins', serif;
+    justify-content:center;
+    gap:12px;
+    list-style:none;
+    padding:0;
+    margin-top:20px;
+}
+
+.pill-list li{
+    background:#d1b694bb;
+    padding:10px 20px;
+    border-radius:20px;
+    font-size:16px;
+}
+
+/* Tabel info */
+.table-wrap{
+    width:100%;
+    overflow-x:auto;
+    margin:20px auto;
+}
+
+.info-table{
+    width:100%;
+    min-width:380px;
+    border-collapse:collapse;
+    font-family:'poppins', serif;
+    font-size:15px;
+}
+
+.info-table th,
+.info-table td{
+    border:1px solid #000;
+    padding:6px 10px;
+}
+
+.info-table th{
+    font-weight:bold;
+}
+
+/* Project */
+.project-card{
+    margin:25px auto;
+    max-width:480px;
+    text-align:center;
+}
+
+.project-card h3{
+    margin-top:0;
+    color:#57402a;
+    font-size:20px;
+}
+
+.project-card p{
+    font-family:'poppins', serif;
+    font-size:16px;
+    line-height:1.6;
+    text-align:center;
+}
+
+.project-foto{
+    width:220px;
+    height:220px;
+    object-fit:cover;
+    border-radius:50%;
+    border:6px solid #d1b694;
+    box-shadow:0 10px 25px rgba(0,0,0,0.12);
+    transition:0.4s;
+    margin:0 auto 15px auto;
+    display:block;
+    animation: fotoMuncul 2s ease;
+}
+
+.project-foto:hover{
+    transform:scale(1.05);
+}
+
+/* Contact: form dan tabel */
+.contact-form{
+    width:100%;
+}
+
+.contact-form .table-wrap{
+    max-width:600px;
+    margin:20px auto;
+}
+
+.contact-form table{ width:100%; }
+
+.contact-form table{
+    width:100%;
+    border-collapse:collapse;
+    font-family:'poppins', serif;
+}
+
+.contact-form td{ text-align:left; }
+
+.contact-form th,
+.contact-form td{
+    border:1px solid #000;
+    padding:6px 10px;
+}
+
+.contact-form th{
+    font-weight:bold;
+}
+
+/* Contact: input dan tombol */
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form input[type="tel"],
+.contact-form input[type="date"],
+.contact-form select,
+.contact-form textarea{
+    border:1px solid #d1b694;
+    border-radius:8px;
+    padding:6px 10px;
+    font-family:'poppins', sans-serif;
+    background:#fffaf5;
+    color:#6D5B4B;
+}
+
+.contact-form input[type="submit"]{
+    background:#4e3116;
+    color:#faf4ee;
+    border:none;
+    padding:8px 25px;
+    border-radius:50px;
+    margin:5px;
+    cursor:pointer;
+    font-family:'poppins', serif;
+    font-size:15px;
+    transition:0.3s;
+}
+
+.contact-form input[type="submit"]:hover{
+    background:#6b6a6a;
+    transform:translateY(-2px) scale(1.05);
+}
+
+.contact-note{
+    font-size:13px;
+    font-style:italic;
+    color:#6D5B4B;
+    font-family:'poppins', serif;
+    margin-top:15px;
+}
+
+/* Footer */
+footer p{
+    text-align:center;
+    margin-top:0px;
     padding:20px;
+    font-size:10px;
+    color:#6D5B4B;
+    font-family:'poppins', serif;
+}
+
+/* Responsive layar kecil */
+@media (max-width:600px){
+    .page-container{
+        padding:30px 15px;
+    }
+    .info-table,
+    .contact-form table{
+        font-size:13px;
+    }
+    .info-table th,
+    .info-table td,
+    .contact-form th,
+    .contact-form td{
+        padding:8px 8px;
+    }
 }
